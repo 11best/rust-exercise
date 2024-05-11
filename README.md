@@ -1,11 +1,7 @@
-run main.rs
-```
-cargo run
-```
-
 run specific file
+
 ```
-cargo run xxx.rs
+cargo run --bin xxx
 ```
 
 Exercises from https://programming.in.th/
