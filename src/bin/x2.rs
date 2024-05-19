@@ -1,6 +1,8 @@
 fn main() {
-    let x1: i16 = read_input().parse().expect("can not parse to int");
-    let s: i16 = read_input().parse().expect("can not parse to int");
+    let input_string = read_input();
+    let splited_num: Vec<&str> = input_string.split_whitespace().collect();
+    let x1: i16 = splited_num[0].parse().expect("can not parse to int");
+    let s: i16 = splited_num[1].parse().expect("can not parse to int");
 
     let t = find_x2(x1, s).expect("can not find x2");
     let x = Some(t);
